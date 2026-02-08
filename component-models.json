@@ -136,6 +136,14 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Slide",
+            "value": "slide"
+          },
+          {
+            "name": "Title Slide",
+            "value": "slide--title"
           }
         ]
       }

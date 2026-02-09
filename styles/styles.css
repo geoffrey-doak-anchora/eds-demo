@@ -74,7 +74,7 @@
   }
 }
 
-html {
+html:not(.adobe-ue-edit) {
   scroll-snap-type: y mandatory;
 }
 
@@ -265,6 +265,12 @@ main > .section.title-slide {
   height: 100vh;
   margin: 0 0 0 0;
   scroll-snap-align: start;
+}
+
+.adobe-ue-edit main > .section.slide,
+.adobe-ue-edit main > .section.title-slide {
+  height: auto;
+  scroll-snap-align: unset;
 }
 
 main > .section.title-slide {

@@ -24,8 +24,8 @@
   --anchora-black: black;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: "sora", sans-serif;
+  --heading-font-family: "sora", sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -84,6 +84,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   /* color: blue; */
+  font-weight: 600;
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
@@ -119,7 +120,7 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.25;
   scroll-margin: 40px;
 }
@@ -139,6 +140,12 @@ pre,
 blockquote {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+}
+
+ul, ol {
+  ul, ol {
+    margin-top: 0;
+  }
 }
 
 code,
@@ -297,6 +304,10 @@ main > .section.slide h2{
 
 main > .section.slide h2 strong{
   color: var(--anchora-brand-secondary);
+}
+
+html:not(.adobe-ue-edit main) .section.slide:not(.title-slide) > div > :not(h1, h2) {
+  transform: translateY(calc(40vh - 50%));
 }
 
 /* section metadata */

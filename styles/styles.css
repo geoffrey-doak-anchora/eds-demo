@@ -295,6 +295,10 @@ main > .section.slide h2{
   margin: 0 -32px 32px -32px;
 }
 
+main > .section.slide h2 strong{
+  color: var(--anchora-brand-secondary);
+}
+
 /* section metadata */
 main .section.light,
 main .section.highlight {
